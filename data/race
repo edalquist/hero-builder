@@ -1,0 +1,9 @@
+[
+	{ "name": "Human" },
+	{ "name": "Dwarf" },
+	{ "name": "Elf" },
+	{ "name": "Halfling" },
+	{ "name": "Gnome" },
+	{ "name": "Half-Elf" },
+	{ "name": "Half-Orc" }
+]

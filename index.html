@@ -1,17 +1,23 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" ng-app="heroBuilderApp">
 <head>
   <meta charset="utf-8">
 
   <title>Hero Builder</title>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
-  <script src="js/hero-builder.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-resource.js"></script>
+  <script src="hero-builder.js"></script>
+<!--
   <link rel="stylesheet" href="css/hero-builder.css?v=1.0"></link>
+-->
 
 </head>
 
-<body>
-  Hello World
+<body ng-controller="HeroBuilderCtrl">
+	<label for="race_select">Select Race</label>
+	<select name="race_select" ng-model="race" ng-options="r.name for r in races"></select>
+	<button ng-click="alert('test')">Generate Hero</button>
 </body>
+
 </html>
