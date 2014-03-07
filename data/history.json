@@ -1,0 +1,24 @@
+[
+	{
+		"category":"Home Climate",
+		"options":[
+			{"min":1, "max":15, "name": "Cold (artic or subartic)"},
+			{"min":16, "max":65, "name": "Temperate"},
+			{"min":66, "max":100, "name": "Warm (tropical or subtropical)"}
+		]
+	},
+	{
+		"category":"Home Terrain",
+		"options":[
+			{"min":1, "max":10, "name": "Desert"},
+			{"min":11, "max":30, "name": "Plains"},
+			{"min":31, "max":45, "name": "Forest"},
+			{"min":46, "max":50, "name": "Hills"},
+			{"min":61, "max":70, "name": "Mountains"},
+			{"min":71, "max":80, "name": "Marsh"},
+			{"min":81, "max":85, "name": "Aquatic"},
+			{"min":86, "max":90, "name": "Underground"},
+			{"min":91, "max":100, "name": "Nomadic People"}
+		]
+	}
+]

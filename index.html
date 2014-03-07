@@ -8,16 +8,19 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-resource.js"></script>
   <script src="hero-builder.js"></script>
-<!--
-  <link rel="stylesheet" href="css/hero-builder.css?v=1.0"></link>
--->
 
 </head>
 
 <body ng-controller="HeroBuilderCtrl">
 	<label for="race_select">Select Race</label>
 	<select name="race_select" ng-model="race" ng-options="r.name for r in races"></select>
-	<button ng-click="alert('test')">Generate Hero</button>
+	<button ng-click="generate()">Generate Hero</button>
+	<ol>
+		<li ng-repeat="history in histories">
+			<b>{{history.category}}</b> - 
+			<select name="race_select" ng-model="history.selected" ng-options="history.options.indexOf(opt) as opt.name for opt in history.options"></select>
+		</li>
+	</ol>
 </body>
 
 </html>
