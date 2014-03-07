@@ -3,12 +3,12 @@ var heroBuilderApp = angular.module('heroBuilderApp', [ 'ngResource' ]);
 
 heroBuilderApp.controller('HeroBuilderCtrl', function ($scope, $http) {
 
-	$http.get('/data/race.json').success(function(races) {
+	$http.get('data/race.json').success(function(races) {
 		$scope.race = races[0];
 		$scope.races = races;
 	});
 
-	$http.get('/data/history.json').success(function(histories) {
+	$http.get('data/history.json').success(function(histories) {
 		$scope.histories = histories;
 	});
 
